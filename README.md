@@ -1,4 +1,4 @@
-# Custom Cursor Screen Recorder
+# Custom cursor screen recorder
 
 A Python-based screen recording utility that allows you to overlay a custom image as the mouse cursor. Perfect for creating tutorials, software demonstrations, and presentations where a more visible and stylized cursor is needed.
 
@@ -15,28 +15,32 @@ A Python-based screen recording utility that allows you to overlay a custom imag
 
 ## Prerequisites
 
-This script requires Python 3. You will also need to install the following libraries:
+This script requires Python 3.13. You will also need to install the following libraries:
 
--   `opencv-python`
--   `numpy`
--   `pyautogui`
 -   `mss`
+-   `numpy`
+-   `opencv-python`
+-   `pyautogui`
 -   `pynput`
 
 ## Installation
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://your-repository-url/custom-cursor-screen-recorder.git
-    cd custom-cursor-screen-recorder
+    git clone https://github.com/alxndrztsv/screen-recorder.git
+    cd screen-recorder
     ```
 
 2.  **Install the required packages:**
     ```bash
-    pip install opencv-python numpy pyautogui mss pynput
+    pip install mss numpy opencv-python pyautogui pynput
+    ```
+    or
+    ```bash
+    pip install -r requirements.txt
     ```
 
-3.  **Add a cursor image:**
+4.  **Add a cursor image:**
     Place your custom cursor image, preferably a PNG with a transparent background, in the project directory and name it `cursor.png`, or specify a different path using the `-c` argument.
 
 ## Usage
@@ -45,7 +49,7 @@ Run the script from your terminal. The recording will start immediately and a li
 
 **Basic Command:**
 ```bash
-python screen_recorder.py
+python main.py
 ```
 
 ### Command-Line Arguments
@@ -63,7 +67,7 @@ You can customize the recording using the following arguments:
 
 **Example:** Record the secondary monitor at 60 FPS and save it as `tutorial.mp4`:
 ```bash
-python screen_recorder.py -m 2 -f 60.0 -o tutorial.mp4
+python main.py -m 2 -f 60.0 -o tutorial.mp4
 ```
 
 ---
