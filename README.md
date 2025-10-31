@@ -115,4 +115,4 @@ This process is repeated for every frame, making it appear as if the custom curs
 
 ## License
 
-This project has no license. No idea for this is for.
+This project has no license. No idea for what this is for.
